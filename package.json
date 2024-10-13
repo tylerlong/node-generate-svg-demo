@@ -4,7 +4,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "demo": "tsx -r dotenv-override-true/config src/demo.ts",
+    "demo": "tsx -r dotenv-override-true/config src/demo.tsx",
     "lint": "tsc --jsx react --skipLibCheck --noEmit --target ESNext --moduleResolution NodeNext --module NodeNext ./src/*.ts && eslint . --fix && prettier --write . && sort-package-json",
     "test": "vitest run"
   },
@@ -24,6 +24,8 @@
     "canvas": "^2.11.2",
     "jsdom": "^25.0.1",
     "paper": "^0.12.18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "svgdom": "^0.1.19",
     "two.js": "^0.8.14"
   }
